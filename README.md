@@ -1,79 +1,104 @@
 # React-Native-ToDo
 
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is a [**React Native**](https://reactnative.dev) To-Do List app that allows users to manage their daily tasks. The app is built using React Native and includes features such as task management, persistent storage, animations, and more.
 
-# Getting Started
+---
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions up to the "Creating a new application" step before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Add Tasks:** Users can add tasks to the list.
+- **Delete Tasks:** Tasks can be removed from the list.
+- **Edit Tasks:** Task descriptions can be modified.
+- **Mark Tasks as Complete:** Users can toggle the completion status of tasks with visual feedback.
+- **Persistent Storage:** Tasks are saved locally using AsyncStorage, so they remain even after the app is closed.
+- **Smooth Animations:** Animated transitions for task actions, such as fade-out effects for deletions, enhance the user experience.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+---
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Getting Started
+
+> **Note:** Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions up to the "Creating a new application" step before proceeding.
+
+### Prerequisites
+
+1. Follow the [React Native Environment Setup Guide](https://reactnative.dev/docs/environment-setup).
+2. Install Node.js and npm from [Node.js](https://nodejs.org/).
+3. Install Android Studio or Xcode based on your development platform.
+
+### Clone the Repository
 
 ```bash
-npx react-native start
+git clone https://github.com/Gayatrinj/React-Native-ToDoList.git
+cd React-Native-ToDoList
 ```
-Step 2: Start your Application
-Let Metro Bundler run in its own terminal. Open a new terminal from the root of your React Native project. Run the following command to start your Android or iOS app:
 
+---
 
-For Android
-```bash
+### Installation
 
-npx react-native run-android
-```
-For iOS
-
-```bash
-
-npx react-native run-ios
-```
-If everything is set up correctly, you should see your new app running in your Android Emulator or iOS Simulator shortly, provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode, respectively.
-
-Step 3: Modifying your App
-Now that you have successfully run the app, let's modify it.
-
-Open App.tsx in your text editor of choice and edit some lines.
-
-For Android: Press the <kbd>R</kbd> key twice or select "Reload" from the Developer Menu (<kbd>Ctrl</kbd> + <kbd>M</kbd> on Windows and Linux, or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> on macOS) to see your changes.
-
-For iOS: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes.
-
-## Congratulations! 🎉
-You've successfully run and modified your React Native App. 🥳
-
-Now what?
-If you want to add this new React Native code to an existing application, check out the Integration guide.
-If you're curious to learn more about React Native, check out the Introduction to React Native.
-Troubleshooting
-If you can't get this to work, see the Troubleshooting page.
-
-### Learn More
-To learn more about React Native, take a look at the following resources:
-
-React Native Website - learn more about React Native.
-Getting Started - an overview of React Native and how to set up your environment.
-Learn the Basics - a guided tour of the React Native basics.
-Blog - read the latest official React Native Blog posts.
-@facebook/react-native - the Open Source GitHub repository for React Native.
-
-### Explanation of Changes
-- **Metro Server**: Updated to `npx react-native start` to ensure consistency with the CLI approach.
-- **Android and iOS Commands**: Changed to `npx react-native run-android` and `npx react-native run-ios`, as recommended by the React Native CLI community.
-
-### Steps to Update and Push to GitHub
-
-1. Open your `README.md` file in a text editor.
-2. Replace the content with the updated version above.
-3. Save the file.
-4. Open your terminal in the project directory and run the following commands:
+1. **Install Dependencies:**
 
    ```bash
-   git add README.md
-   git commit -m "Update README with React Native CLI commands"
-   git push origin main
-```
+   npm install
+   ```
+
+2. **Start Metro Bundler:**
+
+   ```bash
+   npx react-native start
+   ```
+
+3. **Run the App:**
+   - For Android:
+     ```bash
+     npx react-native run-android
+     ```
+   - For iOS:
+     ```bash
+     npx react-native run-ios
+     ```
+
+4. **Modify the App:**
+   - Open `App.tsx` in your preferred editor to make changes.
+   - Reload the app to see updates:
+     - Android: Press `R` twice or use `Ctrl + M` (Windows/Linux) or `Cmd ⌘ + M` (macOS).
+     - iOS: Press `Cmd ⌘ + R` in the iOS simulator.
+
+---
+
+## Troubleshooting
+
+### Common Errors
+
+1. **EADDRINUSE Error:**
+   ```bash
+   npx react-native start --port=8082
+   ```
+   > Metro Bundler is already running on port 8081. Use the above command to start on a different port.
+
+2. **Gradle Build Error:**
+   ```bash
+   rm -rf ~/.gradle
+   ```
+   > Clear the Gradle cache to resolve build issues.
+
+### General Tips
+
+- Ensure your device/emulator is properly configured.
+- Restart Metro Bundler and the emulator if needed.
+
+---
+
+## Resources
+
+- [React Native Documentation](https://reactnative.dev/)
+- [Metro Bundler Documentation](https://facebook.github.io/metro/)
+
+---
+
+## Contributing
+
+Feel free to submit pull requests or suggest improvements. Fork the repository and contribute to making the app even better!
+
+---
+
